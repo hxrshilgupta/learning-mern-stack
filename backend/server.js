@@ -24,7 +24,6 @@ app.delete("/api/notes/:id", (req, res) => {
   res.status(200).json("Deleted 40 notes");
 });
 
-
 app.listen(5001, () => {
   console.log("Server is running on port 5001");
 });
