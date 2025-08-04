@@ -7,8 +7,12 @@ dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT || 5001;
+
 // Middleware to parse JSON requests
 app.use(express.json());
+/**
+ * Middleware is a function that runs in the middle between the request and response
+ */
 
 // Routes
 app.use("/api/notes", notesRoutes);
